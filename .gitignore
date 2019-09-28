@@ -341,3 +341,8 @@ ASALocalRun/
 
 # BeatPulse healthcheck temp database
 healthchecksdb
+/Authothon.Mobile.Feature
+/Authothon.Mobile
+/Authothon.API.Feature
+/Authothon.API
+/Autothon.Start

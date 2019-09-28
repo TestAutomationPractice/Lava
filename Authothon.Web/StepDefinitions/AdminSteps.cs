@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Autothon.Web.Pages;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,10 +11,13 @@ namespace Autothon.Web.Step_Definitions.Movie
     [Binding]
     public class AdminSteps
     {
+        AddMoviePage addMoviePage = new AddMoviePage();
+        HomePage homePage = new HomePage();
+
         [Given(@"I am on Autothon challenge page")]
         public void GivenIAmOnAutothonChallengePage()
         {
-            
+            homePage.GoToUrl();
         }
 
         [Given(@"I login with below details")]
@@ -24,9 +28,10 @@ namespace Autothon.Web.Step_Definitions.Movie
 
 
         [When(@"I add a new movie with below details")]
-        public void WhenIAddANewMovieWithBelowDetails()
+        public void WhenIAddANewMovieWithBelowDetails(Table table)
         {
-            
+
+            addMoviePage.EnterMovieDetails();
         }
 
         [Then(@"I should be able to add movie successfully")]

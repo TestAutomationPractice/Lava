@@ -9,12 +9,9 @@ namespace Autothon.Helpers.Web
 {
     public class GeneralUtilities
     {
-        //DriverManager driverManager = DriverManagerFactory.getDriverManager(DriverType.CHROME);
-        //IWebDriver driver;
+        private static IWebDriver driver = Webdriver.CurrentDriver();
 
-        private IWebDriver driver = Webdriver.CurrentDriver();
-
-        public string getCurrentProjectDirectory()
+        public static string getCurrentProjectDirectory()
         {
             string baseDir = AppDomain.CurrentDomain.BaseDirectory;
             baseDir = Directory.GetParent(Directory.GetParent(baseDir).ToString()).FullName;
@@ -25,6 +22,11 @@ namespace Autothon.Helpers.Web
         public string GetConfigApplicationName()
         {
             return GetConfigValueFor("ApplicationName");
+        }
+
+        public string GetUrlValue()
+        {
+            return GetConfigValueFor("Url");
         }
 
         public string GetUrl()
@@ -82,13 +84,13 @@ namespace Autothon.Helpers.Web
             FindElement(xpathLocator).SendKeys(value);
         }
 
-        public void Click(By locator)
+        public static void Click(By locator)
         {
             //WaitUntil(ExpectedConditions.ElementToBeClickable(locator));
             FindElement(locator).Click();
         }
 
-        public IWebElement FindElement(By locator)
+        public static IWebElement FindElement(By locator)
         {
             //WaitUntil(ExpectedConditions.ElementExists(locator));
             return driver.FindElement(locator);

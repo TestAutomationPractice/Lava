@@ -44,17 +44,17 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Movie\Admin.feature.cs" >    
+    <Compile Include="Movie\Admin.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Admin.feature</DependentUpon>
     </Compile>
-    <Compile Include="Movie\UnauthenticatedUser.feature.cs" >    
+    <Compile Include="Movie\UnauthenticatedUser.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>UnauthenticatedUser.feature</DependentUpon>
     </Compile>
-    <Compile Include="Movie\User.feature.cs" >
+    <Compile Include="Movie\User.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>User.feature</DependentUpon>
@@ -63,7 +63,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Movie\Admin.feature">
-      <Generator>SpecFlowSingleFileGenerator</Generator>      
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Admin1.feature.cs</LastGenOutput>
     </None>
     <None Include="Movie\UnauthenticatedUser.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
@@ -71,6 +72,7 @@
     <None Include="Movie\User.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
     </None>
+    <None Include="packages.config" />
     <None Include="paket.references" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
