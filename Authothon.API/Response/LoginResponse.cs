@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Authothon.API.Response
+namespace Autothon.API.Response
 {
     public class LoginResponse
     {

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Authothon.API.Request
+namespace Autothon.API.Request
 {
     public class LoginRequestModel
     {

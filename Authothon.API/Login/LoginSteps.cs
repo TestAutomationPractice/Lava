@@ -1,7 +1,7 @@
 ﻿using System;
 using TechTalk.SpecFlow;
 
-namespace Authothon.API.Feature.Authothon.API.Login
+namespace Autothon.API.Feature.Autothon.API.Login
 {
     [Binding]
     public class LoginSteps

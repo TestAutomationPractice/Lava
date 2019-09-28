@@ -44,18 +44,34 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Login\Login.feature.cs">
+    <Compile Include="Movie\Admin.feature.cs" >    
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Login.feature</DependentUpon>
+      <DependentUpon>Admin.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Movie\UnauthenticatedUser.feature.cs" >    
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UnauthenticatedUser.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Movie\User.feature.cs" >
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>User.feature</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Login\Login.feature">
-      <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>Login.feature.cs</LastGenOutput>
+    <None Include="Movie\Admin.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>      
     </None>
+    <None Include="Movie\UnauthenticatedUser.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+    </None>
+    <None Include="Movie\User.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+    </None>
+    <None Include="paket.references" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

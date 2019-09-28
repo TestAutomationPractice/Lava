@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Browser\Webdriver.cs" />
     <Compile Include="Database\database.cs" />
     <Compile Include="ElasticResult\PostResultToElasticSearch.cs" />
     <Compile Include="ElasticResult\TestCaseModel.cs" />
@@ -52,6 +53,7 @@
     <Compile Include="Global\GlobalConfiguration.cs" />
     <Compile Include="Helpers\Common\CommonHelpers.cs" />
     <Compile Include="Helpers\Mobile\Helper.cs" />
+    <Compile Include="Helpers\Web\GeneralUtilities.cs" />
     <Compile Include="Helpers\Web\Helper.cs" />
     <Compile Include="Logger\ConsoleLogger.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
