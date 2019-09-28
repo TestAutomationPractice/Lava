@@ -45,10 +45,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Browser\Webdriver.cs" />
+    <Compile Include="Communication\HttpManager.cs" />
+    <Compile Include="Communication\PublicApiCommunication.cs" />
     <Compile Include="Database\database.cs" />
     <Compile Include="ElasticResult\PostResultToElasticSearch.cs" />
     <Compile Include="ElasticResult\TestCaseModel.cs" />
     <Compile Include="Enums\Enum.cs" />
+    <Compile Include="Exceptions\WebApiException.cs" />
     <Compile Include="Exception\Exception.cs" />
     <Compile Include="Global\GlobalConfiguration.cs" />
     <Compile Include="Helpers\Common\CommonHelpers.cs" />
@@ -56,11 +59,16 @@
     <Compile Include="Helpers\Web\GeneralUtilities.cs" />
     <Compile Include="Helpers\Web\Helper.cs" />
     <Compile Include="Logger\ConsoleLogger.cs" />
+    <Compile Include="Models\ErrorCodeResponse.cs" />
+    <Compile Include="Models\HttpRequest.cs" />
+    <Compile Include="Models\HttpServiceRequest.cs" />
+    <Compile Include="Models\WebApiResponse.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RestSharp\RestSharpManager.cs" />
     <Compile Include="RunManager\RunManagerNunit.cs" />
     <Compile Include="RunManager\TestEventListner.cs" />
     <Compile Include="SerializationHelper\DeSerializeTestRunHelperModel.cs" />
+    <Compile Include="Utilities\Movies.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -85,6 +93,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="obj\Debug\TempPE\" />
+    <Folder Include="Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Choose>
