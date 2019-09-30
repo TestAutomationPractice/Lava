@@ -1,0 +1,10 @@
+Newtonsoft.Json
+NUnit
+Specflow
+RestSharp
+Selenium.WebDriver
+MSTest.TestAdapter
+NDesk.Options
+Nunit.Console
+Nunit.Engine
+log4net
